@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #container{
+        
+        /* border:1px solid red; */
+        height:200px;
+        width:90%;
+        margin-left: 5%;
+     }
+     #container:hover {
+           
+            cursor: pointer;
+        }
+    .up{
+        /* border:1px solid green; */
+        height:45px;
+        width:100%;
+       
+        display:flex;
+        justify-content: end;
+     }
+     .up>ul,img{
+        height:30px;
+        width: 30px;
+       
+     }
+     #middle{
+        /* border:1px solid black; */
+        height:80px;
+        width:100%;
+        
+        display:flex;
+        justify-content:space-between;
+     }
+    
+     #middle3>img{
+        height:50px;
+        width: 50px;
+        padding-left: 15px;
+        padding-top: 15px;
+     }
+     #middle1>img{
+        height:100%;
+        width: 70%;
+     }
+     #middle2>img{
+        padding-top: 10px;
+     }
+     input{
+        height: 40%;
+        width:70%;
+     }
+     #middle1{
+        height:100%;
+        width:25%;
+
+     }
+     
+     #middle2{
+        height:100%;
+        width:60%;
+        padding-top: 10px;
+     }
+     #middle3{
+        /* border: 1px solid blue; */
+        height:100%;
+        width:15%;
+        background-color: rgb(231, 227, 227);
+        
+     }
+     #down{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width:100%;
+        height: 40px;
+        gap:10px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+     }
+     #down>div>select{
+        background-color:#84c225;
+        width:250px;
+        height: 100%;
+     }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="up">
+            
+           <table>
+            <tr>
+                <td><img src="https://luxai.com/wp-content/uploads/2021/01/call-1.png"  alt=""></td>
+                <td> <p>1860 123 1000</p></td>
+            </tr>
+           </table>
+           <table>
+            <tr>
+                <td><img src="https://th.bing.com/th/id/OIP.QebhUoo5bAhoDfWI1mB0JwHaLb?pid=ImgDet&w=920&h=1419&rs=1" alt="">
+                   </td>
+                    <td> <p>560004,</p></td>
+                    <td><select>
+                        <option>Bangalore</option>
+                        
+                    </select></td>
+                    
+            </tr>
+           </table>
+           <table>
+            <tr>
+                
+               
+                <td><img src="https://th.bing.com/th/id/OIP.93x7AOmX4RDmlXfegJJtWAAAAA?pid=ImgDet&rs=1"/></td>
+                <td><p>Login/Sign Up</p></td>
+            </tr>
+           </table>
+            
+        </div>
+        <div id="middle">
+             <div id="middle1"><img src="https://d2sj89osparb2a.cloudfront.net/images/media/bigbasket-cashback-coupons-topcashback.png"/>
+             </div>
+             <div id="middle2">
+                <input type="text" placeholder="search for products..."/>
+                <img src="https://th.bing.com/th/id/OIP.aewliRTPoYpyQhGwOlCaPAHaHa?pid=ImgDet&rs=1"style="margin-left:-4px;margin-bottom:3px"/>
+             </div>
+             <div id="middle3">
+                <img src="https://thumbs.dreamstime.com/b/d-red-plastic-supermarket-basket-white-eps-vector-211822937.jpg"/>
+               
+                <p style=" margin-left:85px;margin-top: -50px; color: grey;";> My Basket 0 item</p>
+             </div>
+        </div>
+        <div id="down">
+            <div>
+                <select>
+                    <option>SHOP BY CATEGORY</option>
+                <select>
+            </div>
+            <div>
+                <img src="https://www.pinclipart.com/picdir/big/87-878228_icon-clip-art.png" style="margin-top: 5px;"/>
+                <p style="margin-top: -20px; margin-left:30px;color: grey;";>OFFERS</p>
+            </div>
+            <div>
+                <img src="https://th.bing.com/th/id/R.a0874402b0272837b4f8a04a42dddd25?rik=5TlG%2bYLsNCfwIw&riu=http%3a%2f%2fstatic8.depositphotos.com%2f1012407%2f1010%2fv%2f170%2fdepositphotos_10101033-Little-cute-organic-store-shop.-Vector-icon..jpg&ehk=dznBaSjfpOLAbfdFkfh7naiNiV2MSZdtLcDj54heKZU%3d&risl=&pid=ImgRaw&r=0" style="margin-top: 5px;"/>
+                <p style="margin-top: -20px; margin-left:30px; color: grey;";>BB SPECIALTY</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
