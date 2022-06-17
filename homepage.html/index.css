@@ -1,0 +1,375 @@
+/* navbar start............................ */
+
+
+#container{
+        
+    /* border:1px solid red; */
+    height:200px;
+    width:90%;
+    margin-left: 5%;
+ }
+ #container:hover {
+       
+        cursor: pointer;
+    }
+.up{
+    /* border:1px solid green; */
+    height:55px;
+    width:100%;
+   
+    display:flex;
+    justify-content: end;
+ }
+ .up>ul,img{
+    height:30px;
+    width: 30px;
+   
+ }
+ 
+   
+ 
+ #middle{
+    /* border:1px solid black; */
+    height:90px;
+    width:100%;
+    
+    display:flex;
+    justify-content:space-between;
+ }
+
+ #middle3>img{
+    height:50px;
+    width: 50px;
+    padding-left: 15px;
+    padding-top: 15px;
+ }
+ #middle1>img{
+    height:100%;
+    width: 70%;
+ }
+ #middle2>img{
+    padding-top: 10px;
+ }
+ input{
+    height: 40%;
+    width:70%;
+ }
+ #middle1{
+    height:100%;
+    width:25%;
+
+ }
+ 
+ #middle2{
+    height:100%;
+    width:60%;
+    padding-top: 10px;
+ }
+ #middle3{
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+    height:100%;
+    width:15%;
+    background-color: rgb(231, 227, 227);
+    
+ }
+ #down{
+    /* border: 1px solid brown; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width:100%;
+    height: 43px;
+    gap:10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+ }
+ #down>div>select{
+    background-color:#84c225;
+    width:250px;
+    height: 100%;
+    color: white;
+    border: 0px solid #84c225;
+ }
+ #down>div>select>option{
+    background-color: white;
+    color: #424242;
+ }
+ #down>div>select>option:hover{
+    background-color: #84c225;
+    color: white;
+    cursor: pointer;
+ }
+ /* navbar end............................. */
+
+ /* slide start........................... */
+   #slide>img{
+    /* border: 1px solid red; */
+    height: 470px;
+    width:100%;
+   }
+ #btn{
+    /* border: 1px solid red; */
+    width:65%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin:auto;
+    height: 50px;
+    margin-top: -53px;
+  }
+  #btn>div>button{
+      height: 100%;
+      width: 100%;
+      border: 0px;
+      color: rgb(66, 62, 62);
+      text-align: center;
+      
+      
+  }
+  #btn>div>button:hover{
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      /* background-color: aqua; */
+  }
+  button>stan{
+      font-size: 22px;
+  }
+
+ /* slide end................................ */
+
+
+ /* <!-- offer start.............................--> */
+ #comman{
+
+    margin-top: 100px;
+ }
+ #comman>div>p{
+    text-align: center;
+    font-size: 25px;
+}
+      
+ #offer{
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   grid-template-rows:repeat(1,1fr);
+   height: 75px;
+   width: 85%;
+   margin: auto;
+   /* border: 1px solid red; */
+   gap:3px;
+   margin-top: 50px;
+}
+#offer:hover {
+   
+   cursor: pointer;
+}
+#offer>div>img{
+   height: 100%;
+   width:95%;
+}
+
+    /* <!-- offer end................................. --> */
+
+    /* <!-- slid2 start.................................. --> */
+
+    /* <!-- slid2 end...................................... --> */
+
+    
+     /* <!-- bank start...................................... --> */
+
+    
+     #bank{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,1fr);
+            height: 230px;
+            width: 90%;
+            margin-left: 5%;
+            /* border: 1px solid red; */
+            gap: 3px;
+            margin-top: 60px;
+        } 
+
+       
+        #bank>div>img{
+            height: 100%;
+            width:97%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+        #bank>div>img:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            cursor: pointer;
+         } 
+         /* p{
+            text-align: center;
+            font-size: 25px;
+        } */
+
+      /* <!-- bank end................................... -->  */
+      /* poplar strat..................... */
+        
+    /* bank css */
+
+      /* popular end..................... */
+
+      /* top offer start.................... */
+        
+    /* bank css */
+
+      /* top offer end......................... */
+
+      /* fruits start.................. */
+
+      #fruits{
+         display: grid;
+         
+         grid-template-columns:repeat(4,1fr);
+         grid-template-rows:repeat(2,1fr);
+         height: 400px;
+         width: 90%;
+         margin-left: 5%;
+         /* border: 1px solid red; */
+         gap: 3px;
+        
+     }
+     
+     #fruits>div:nth-child(1){
+         grid-area:1/1/3/3;
+     }
+     /* p{
+         text-align: center;
+         font-size: 25px;
+     } */
+     #fruits>div>img{
+         height: 100%;
+         width:97%;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         margin-top: 10px;
+
+     }
+     #fruits>div>img:hover {
+         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+         cursor: pointer;
+     }
+      /* fruits end..................... */
+
+      /* stapple start................... */
+
+      #stapple{
+         display: grid;
+         grid-template-columns: repeat(6,1fr);
+         grid-template-rows: repeat(1,1fr);
+         height: 170px;
+         width: 90%;
+         margin-left: 5%;
+         /* border: 1px solid red; */
+         gap: 3px;
+         margin-top: 60px;
+     }
+     /* p{
+         text-align: center;
+         font-size: 25px;
+     } */
+     #stapple>div>img{
+         height: 100%;
+         width:97%;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+     }
+     #stapple>div>img:hover {
+         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+         cursor: pointer;
+     }
+
+      /* stapple end...................... */
+
+      /* baverage start.......................... */
+
+     /* fruits css */
+      /* beverage end............................. */
+
+      /* snake start.............................. */
+
+     /* bank css */
+
+      /* snake end.................................... */
+
+      /* cleaning start............................... */
+      
+     /* bank css */
+      /* cleaning end.................................... */
+
+      /* beuty start..................................... */
+     /* fruits css */
+      /* beuty end....................................... */
+
+      /* home and kichen start.......................... */
+       /* stapple css */
+      /* home and kichen end............................ */
+
+      /* brand store start............................ */
+
+      /*stapple css  */
+      /* brand store end............................... */
+
+
+      /* bottom start................................ */
+
+      #containerend{
+         border: 1px solid black;
+         width: 90%;
+         height: auto;
+         margin-left: 60px;
+         padding-left: 15px;
+         font-style:normal;
+         font-size: 17px;
+         margin-bottom: 30px;
+         margin-top: 100px;
+     }
+     #containerend>p{
+         color: #9e969b;
+     }
+     #containerend>h1,h2,ul{
+         color: #424242;
+     }
+    p>stan{
+         color:#50c73c;
+     }
+     #containerend1{
+         /* border: 1px solid red; */
+         display: flex;
+         flex-direction: row;
+         width: 90%;
+         height: auto;
+         gap: 80px;
+         /* margin-left: 60px; */
+         padding-left: 13px;
+         
+         font-style:normal;
+         font-size: 16px;
+         color: #9e969b;
+     }
+     .img>img{
+         height:45px;
+         width: 45px;
+     }
+     #containerend2{
+         /* border: 1px solid green; */
+         width: 90%;
+         height: auto;
+         margin-left: 60px;
+         /* padding-left: 15px; */
+         font-style:normal;
+         font-size: 14px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         color: #9e969b;
+     }
+     .img{
+         display: flex;  
+         color:#80737a;
+         font-size: 13px;
+     } 
+     
+
+      /* bottom end.................................. */
