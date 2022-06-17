@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #signup>form{
+            display:flex;
+            flex-direction: column;
+            gap:3px;
+            height: 150px;
+            width: 600px;
+            margin-left:500px;
+            /* margin-right:400px; */
+            border: 1px solid green
+         }
+         #signup>form>input{
+            height: 30px;
+            background-color: rgb(243, 243, 237);
+            color: rgb(0, 46, 0);
+           
+            padding-top: 10px;
+         }
+        #signbtn{
+            padding:5px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            border-radius: 7px;
+            width: 20%;
+            height: 35px;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        #signup>h1{
+            font-size: 40px;
+            color:green;
+            margin-left: 510px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://1.bp.blogspot.com/-2DztXxbqjZ4/XaA98dZUuGI/AAAAAAAAAes/EP-q52FfNjIr6gMrbr6rNhAN_nYPTL_FQCNcBGAsYHQ/s1600/20160302090451-Great-Grocery-Deals-at-BigBasket-with-Pennyful.jpeg" style="height:400px ;margin-left:500px"/>
+    <div id="signup">
+        <h1>Login</h1>
+        <form>
+            
+            <input type="text" placeholder="type the user name" id="username"/>
+            <input type="text" placeholder="type the userpassword" id="userpassword"/>
+            
+            <button onclick="login()" id="signbtn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+document.querySelector("form").addEventListener("signbtn",login)
+
+    let reguser=JSON.parse(localStorage.getItem("user"));
+
+    function login(){
+        event.preventDefault();
+
+        let Name=document.getElementById("username").value;
+        let Password=document.getElementById("userpassword").value;
+
+        // console.log(userName,Userpassword)
+
+        for(let i=0 ;i<reguser.length;i++){
+            console.log(reguser[i]);
+            if(reguser[i].userName===Name && reguser[i].userPassword===Password){
+                alert("login sucessfully!")
+                window.location.href="./index.html";
+                break;
+            }
+            else{
+                console.log("login failed!")
+            }
+        }
+    }
+</script>
